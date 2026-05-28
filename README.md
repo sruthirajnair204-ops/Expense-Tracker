@@ -1,28 +1,28 @@
-# Console-Based Expense Tracker
+# Console-Based Expense Tracker (Python Mini-Project)
 
-A lightweight, terminal-based Expense Tracker application built entirely using pure Python. This project was developed as a college mini-project to demonstrate foundational programming logic, control flow structures, and dynamic data management without relying on external libraries or graphical interfaces.
+A lightweight, interactive command-line application built entirely using pure Python. This project was developed as a college mini-project to demonstrate a solid understanding of fundamental programming concepts, control flow patterns, and real-time input validation without relying on external libraries or databases.
 
-## Features
+## Key Features
 
-- **Add New Expenses (Option 1)**: Input daily expenses with strict data validation. Category names must contain only alphabetical characters, and amounts must be numerical.
-- **View Recorded Expenses (Option 2)**: Displays an organized, cleanly indexed checklist tracking every logged expense alongside the Indian Rupee (₹) symbol.
-- **Calculate Total Spend (Option 3)**: Instantly sums up all expenditures currently stored in the system memory.
-- **Delete Specific Entries (Option 4)**: Allows removing mistaken entries smoothly by entering their corresponding list item number. Both parallel tracking lists are immediately updated and synchronized.
-- **Graceful Program Exit (Option 5)**: Ends the interactive environment cleanly with a closing user message.
+- **1. Add New Expense**: Allows logging an expense with dual-layer safety validation. Category names are strictly filtered to accept only alphabetical letters, and prices require clear numerical values.
+- **2. View Expense**: Formats and prints a clean, indexed breakdown of all your tracked costs side-by-side with the Indian Rupee (`₹`) text symbol.
+- **3. View Total Spent**: Uses built-in computational processing to calculate and output the exact aggregate sum of every recorded expenditure up to two decimal places.
+- **4. Delete an Expense**: Features dynamic target deletion where entering an index serial number drops data elements cleanly out of system memory using standard synchronized list operations.
+- **5. Exit Program**: Securely breaks out of the execution workspace thread and terminates the runtime session with a friendly closing notification.
 
 ## Python Core Concepts Covered
 
-- **Dynamic Data Structures**: Dual parallel lists (`categories` and `amounts`) managed simultaneously using `.append()` and `.pop()`.
-- **Control Loops & Flow**: Continuous application runtime via a `while True` loop alongside conditional `if-elif-else` routing.
-- **Data Validation & Robustness**: Bulletproof `try-except` blocks preventing runtime crashes from bad data conversions (handling strings inside integer or floating-point parameters).
-- **List Indexing**: Leveraging `range(len())` to bind and pair separate multi-list structural values cleanly inside user-facing terminal logs.
+- **Dynamic Memory Collection**: Managing operational attributes together in real-time across synchronized parallel arrays (`categories=[]` and `amounts=[]`).
+- **Data Mutation Methods**: Adding new list indexes dynamically via `.append()` and pulling elements back out accurately using index target extraction via `.pop()`.
+- **Exception/Error Handling**: Building bulletproof execution frameworks using robust `try-except ValueError` blocks to catch and filter problematic strings or empty arguments.
+- **System Synchronization**: Iterating smoothly across multiple storage variables simultaneously using standard positional mapping (`range(len())`).
 
-## How to Run the Application
+## How to Run and Interact
 
-1. Ensure you have **Python 3.x** installed on your machine.
-2. Copy the code into a local script file named `main.py` or `expense_tracker.py`.
-3. Open your terminal or IDE console (e.g., PyCharm) and execute the program:
+1. Ensure you have **Python 3.x** installed locally.
+2. Save the script on your system workspace as `main.py`.
+3. Open a system Terminal window or use your IDE terminal runner (such as PyCharm) and input:
    ```bash
    python main.py
    ```
-4. Interact directly with the system by choosing options `1` through `5` inside the terminal window prompt.
+4. Enter integers **1 through 5** inside the text prompt line to control the utility interface directly.
